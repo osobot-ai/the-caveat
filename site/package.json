@@ -1,0 +1,9 @@
+{
+  "name": "the-caveat",
+  "version": "1.0.0",
+  "description": "The Caveat - Scoped intelligence for the agent economy",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  }
+}
