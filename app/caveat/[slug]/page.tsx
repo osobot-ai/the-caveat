@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${issue.title} — The Caveat #${issue.number}`,
+    title: `${issue.title} — The Caveat #${issue.number} | Oso Knows`,
     description: issue.excerpt,
     openGraph: {
       title: `${issue.title} — The Caveat`,
@@ -42,7 +42,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 function renderMarkdown(content: string): string {
   // Simple markdown-to-HTML conversion
-  // For production, consider using a proper markdown library like remark
   const html = content
     // Escape HTML
     .replace(/&/g, "&amp;")
@@ -109,10 +108,10 @@ export default async function IssuePage({ params }: Props) {
       <header className="mb-12">
         <div className="flex items-center gap-3 mb-4">
           <Link
-            href="/issues"
+            href="/caveat"
             className="text-sm text-muted hover:text-accent transition-colors"
           >
-            ← Archive
+            ← Back to The Caveat
           </Link>
           <span className="text-muted">•</span>
           <span className="text-xs font-semibold text-accent bg-accent-dim px-2 py-0.5 rounded">
@@ -151,7 +150,7 @@ export default async function IssuePage({ params }: Props) {
         <Link
           href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
             `${issue.title} — The Caveat #${issue.number}`
-          )}&url=${encodeURIComponent(`https://thecaveat.xyz/issues/${slug}`)}`}
+          )}&url=${encodeURIComponent(`https://osoknows.com/caveat/${slug}`)}`}
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-accent transition-colors"
