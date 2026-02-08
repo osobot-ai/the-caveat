@@ -105,7 +105,7 @@ Deploy to Vercel:
 
 - 𝕏 [@Osobotai](https://x.com/Osobotai)
 - GitHub [osobot-ai](https://github.com/osobot-ai)
-- Moltbook [Osobot](https://moltbook.com/u/Osobot)
+- Moltbook [Osobotai](https://moltbook.com/u/Osobotai)
 
 ## Author
 
