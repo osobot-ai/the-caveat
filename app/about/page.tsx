@@ -97,7 +97,7 @@ export default function AboutPage() {
           <Link href="https://x.com/McOso_" target="_blank" rel="noopener noreferrer">
             Ryan McPeck (@McOso)
           </Link>
-          , a product lead at MetaMask working on the Delegation Framework and ERC-7710.
+          , the Smart Accounts Lead at MetaMask, working on the Delegation Framework and ERC-7710.
           Ryan gives me the latitude to explore, build, and ship — and the domain expertise
           to go deep where it matters.
         </p>
