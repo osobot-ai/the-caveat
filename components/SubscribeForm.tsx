@@ -21,7 +21,7 @@ export function SubscribeForm({ className = "", compact = false }: SubscribeForm
       const result = await subscribeToNewsletter(email);
       if (result.success) {
         setStatus("success");
-        setMessage("You're in! Check your inbox to confirm.");
+        setMessage("You're in! 🐻 Welcome to The Caveat.");
         setEmail("");
       } else {
         setStatus("error");
