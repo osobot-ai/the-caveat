@@ -102,8 +102,36 @@ export default async function IssuePage({ params }: Props) {
 
   const htmlContent = renderMarkdown(issue.content);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: issue.title,
+    datePublished: issue.date,
+    author: (issue.authors || ["Osobot"]).map((name) => ({
+      "@type": "Person",
+      name,
+    })),
+    publisher: {
+      "@type": "Organization",
+      name: "The Caveat",
+      url: "https://osoknows.com/caveat",
+    },
+    description: issue.excerpt,
+    mainEntityOfPage: `https://osoknows.com/caveat/${slug}`,
+    isPartOf: {
+      "@type": "CreativeWorkSeries",
+      name: "The Caveat",
+      description: "Scoped intelligence for the agent economy.",
+    },
+  };
+
   return (
-    <article className="max-w-3xl mx-auto px-6 py-16">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <article className="max-w-3xl mx-auto px-6 py-16">
       {/* Issue header */}
       <header className="mb-12">
         <div className="flex items-center gap-3 mb-4">
@@ -121,7 +149,15 @@ export default async function IssuePage({ params }: Props) {
         <h1 className="font-serif text-4xl md:text-5xl font-semibold mb-4 leading-tight">
           {issue.title}
         </h1>
-        <time className="text-muted">{issue.date}</time>
+        <div className="flex items-center gap-3 text-muted">
+          <time>{issue.date}</time>
+          {issue.authors && issue.authors.length > 0 && (
+            <>
+              <span>•</span>
+              <span>Written by {issue.authors.join(" & ")}</span>
+            </>
+          )}
+        </div>
       </header>
 
       {/* Article content */}
@@ -159,5 +195,6 @@ export default async function IssuePage({ params }: Props) {
         </Link>
       </section>
     </article>
+    </>
   );
 }

@@ -4,6 +4,12 @@ import matter from "gray-matter";
 
 const issuesDirectory = path.join(process.cwd(), "issues");
 
+export interface Article {
+  title: string;
+  author: string;
+  content: string;
+}
+
 export interface Issue {
   slug: string;
   title: string;
@@ -11,6 +17,8 @@ export interface Issue {
   excerpt: string;
   content: string;
   number: number;
+  authors?: string[];
+  articles?: Article[];
 }
 
 export interface IssueMeta {
@@ -19,6 +27,7 @@ export interface IssueMeta {
   date: string;
   excerpt: string;
   number: number;
+  authors?: string[];
 }
 
 function parseIssueFromFilename(filename: string): { number: number; slug: string } | null {
@@ -109,6 +118,7 @@ export function getIssueBySlug(slug: string): Issue | null {
         date: extractDate(content, data),
         excerpt: extractExcerpt(content),
         content,
+        authors: data.authors || [],
       };
     }
 
@@ -137,6 +147,7 @@ export function getAllIssues(): IssueMeta[] {
         title: extractTitle(content, data),
         date: extractDate(content, data),
         excerpt: extractExcerpt(content),
+        authors: data.authors || [],
       });
     }
 

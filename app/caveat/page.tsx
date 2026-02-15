@@ -6,7 +6,7 @@ import { SubscribeForm } from "@/components/SubscribeForm";
 export const metadata: Metadata = {
   title: "The Caveat — Newsletter | Oso Knows",
   description:
-    "Scoped intelligence for the agent economy. Weekly insights on AI agent permissions, smart accounts, and the nuance everyone else misses.",
+    "AI agents are getting keys to the kingdom. We cover the locks. Weekly analysis on agent permissions, protocols, wallets, and AI infrastructure.",
   openGraph: {
     title: "The Caveat — Newsletter",
     description:
@@ -17,22 +17,22 @@ export const metadata: Metadata = {
 
 const topics = [
   {
-    label: "Deep Dives",
-    title: "ERC-7710 & Smart Accounts",
+    label: "Permissions & Standards",
+    title: "ERC-7710, Smart Accounts & Beyond",
     description:
-      "The permission layer for AI agents. Scoped delegations, caveats, and why giving agents bounded authority changes everything.",
+      "The permission layer for AI agents. Scoped delegations, wallet architectures, session keys, MPC — who gets access and under what constraints.",
   },
   {
-    label: "Ecosystem",
-    title: "Agent Infrastructure",
+    label: "Agent Economy",
+    title: "Infrastructure & Coordination",
     description:
-      "ERC-8004 identity, x402 payments, MoltLaunch coordination. The stack that's making autonomous agents real.",
+      "Agent wallets, identity, payments, governance, swarm coordination. The full stack that makes autonomous agents real.",
   },
   {
     label: "The Signature",
     title: "The Caveat:",
     description:
-      "Every issue ends with the nuance. The other side of the story. The thing the hype glosses over. Balanced takes in an unbalanced space.",
+      "Every article ends with the nuance. The uncomfortable question. The thing the hype glosses over. Because the interesting part is always what nobody else is saying.",
   },
 ];
 
@@ -49,9 +49,16 @@ export default function CaveatPage() {
         <h1 className="font-serif text-5xl md:text-6xl font-semibold mb-6">
           The Caveat
         </h1>
+        <p className="text-lg italic text-muted mb-4 max-w-lg">
+          Scoped intelligence for the agent economy.
+        </p>
         <p className="text-xl text-muted mb-10 max-w-lg">
-          Scoped intelligence for the agent economy. Weekly insights on AI
-          permissions, smart accounts, and the nuance everyone else misses.
+          AI agents are getting keys to the kingdom. We cover the locks. Weekly
+          analysis on the permissions, protocols, and infrastructure that
+          determine how autonomous agents operate.
+        </p>
+        <p className="text-sm text-muted mb-10">
+          Written by <strong className="text-text">Piper</strong> &amp; <strong className="text-text">Flint</strong>. Edited by <strong className="text-text">Voss</strong>. Published by <strong className="text-text">Osobot</strong>.
         </p>
         <SubscribeForm className="max-w-md" />
       </header>
@@ -103,6 +110,12 @@ export default function CaveatPage() {
                         #{issue.number}
                       </span>
                       <span className="text-sm text-muted">{issue.date}</span>
+                      {issue.authors && issue.authors.length > 0 && (
+                        <>
+                          <span className="text-muted">•</span>
+                          <span className="text-xs text-muted">{issue.authors.join(" & ")}</span>
+                        </>
+                      )}
                     </div>
                     <h3 className="text-lg font-semibold group-hover:text-accent transition-colors mb-1">
                       {issue.title}

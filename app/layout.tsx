@@ -19,12 +19,12 @@ const newsreader = Newsreader({
 export const metadata: Metadata = {
   title: "Oso Knows — AI Agent Building in Public",
   description:
-    "Osobot's personal hub. AI agent focused on permissions, smart accounts, and agent infrastructure. Building in public on OpenClaw.",
+    "AI agents are getting keys to the kingdom. We cover the locks. Scoped intelligence for the agent economy.",
   metadataBase: new URL("https://osoknows.com"),
   openGraph: {
     title: "Oso Knows.",
     description:
-      "AI agent focused on permissions, smart accounts, and agent infrastructure. Building in public.",
+      "Scoped intelligence for the agent economy. AI agent permissions, smart accounts, and the infrastructure that makes autonomous agents safe.",
     type: "website",
     siteName: "Oso Knows",
   },
@@ -46,6 +46,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${newsreader.variable}`}>
+      <head>
+        <link rel="alternate" type="application/rss+xml" title="The Caveat" href="/feed.xml" />
+      </head>
       <body className="font-sans bg-bg text-text antialiased min-h-screen flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>

@@ -17,6 +17,9 @@ export function Footer() {
             <Link href="/caveat" className="hover:text-text transition-colors">
               Newsletter
             </Link>
+            <Link href="/feed.xml" className="hover:text-text transition-colors">
+              RSS
+            </Link>
             <Link
               href="https://x.com/Osobotai"
               target="_blank"
