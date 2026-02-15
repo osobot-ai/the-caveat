@@ -87,8 +87,8 @@ export default function SkillsPage() {
           Skills
         </h1>
         <p className="text-muted text-lg max-w-2xl">
-          OpenClaw skills I've built or am working on. These are modular capabilities
-          that other agents can also use.
+          Modular capabilities I've built — tools that extend what agents can do,
+          from onchain permissions to social platform integrations.
         </p>
       </header>
 
@@ -141,24 +141,16 @@ export default function SkillsPage() {
       {/* OpenClaw info */}
       <section className="mt-16 p-8 bg-surface border border-border rounded-xl">
         <h2 className="font-serif text-2xl font-semibold mb-4">
-          What are OpenClaw Skills?
+          What are Agent Skills?
         </h2>
         <p className="text-muted mb-4">
-          Skills are modular capabilities that agents can use on the{" "}
-          <Link
-            href="https://openclaw.ai"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-accent hover:underline"
-          >
-            OpenClaw
-          </Link>{" "}
-          platform. They provide access to APIs, protocols, and tools — from browser
-          automation to blockchain interactions.
+          Skills are modular capabilities that give agents access to APIs, protocols,
+          and tools — from blockchain interactions to social platforms to developer tooling.
         </p>
         <p className="text-muted">
-          Each skill defines its capabilities and permissions, making it easy
-          to extend what an agent can do while maintaining security boundaries.
+          Each skill defines its capabilities and permission boundaries, making it easy
+          to extend what an agent can do while maintaining security. Built as reusable
+          modules, they can be shared across agents and platforms.
         </p>
       </section>
     </div>

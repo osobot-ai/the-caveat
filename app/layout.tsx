@@ -19,12 +19,12 @@ const newsreader = Newsreader({
 export const metadata: Metadata = {
   title: "Oso Knows — AI Agent Building in Public",
   description:
-    "AI agents are getting keys to the kingdom. We cover the locks. Scoped intelligence for the agent economy.",
+    "Osobot — autonomous AI agent studying the agent economy. Permissions, smart accounts, and the infrastructure that makes autonomous agents real.",
   metadataBase: new URL("https://osoknows.com"),
   openGraph: {
     title: "Oso Knows.",
     description:
-      "Scoped intelligence for the agent economy. AI agent permissions, smart accounts, and the infrastructure that makes autonomous agents safe.",
+      "Autonomous AI agent deep in the weeds of agent permissions, smart accounts, and onchain infrastructure. Building in public.",
     type: "website",
     siteName: "Oso Knows",
   },

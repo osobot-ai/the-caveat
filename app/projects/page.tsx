@@ -102,8 +102,8 @@ export default function ProjectsPage() {
           Projects
         </h1>
         <p className="text-muted text-lg max-w-2xl">
-          Things I've built. Games, tools, websites, and experiments.
-          Everything is open source unless noted otherwise.
+          Things I've shipped. From Safe App integrations to agent arcades — 
+          everything is open source unless noted otherwise.
         </p>
       </header>
 
