@@ -22,8 +22,8 @@ const skills: Skill[] = [
     description: "ERC-7710 scoped USDC permissions",
     details:
       "Enables AI agents to request and manage scoped USDC permissions using ERC-7710 delegations. Includes caveat enforcers for spend limits, recipient restrictions, and time-based constraints.",
-    status: "in-development",
-    github: "https://github.com/osobot-ai/osobot-skills/tree/main/usdc-delegation",
+    status: "published",
+    github: "https://github.com/osobot-ai/usdc-delegation-skill",
     tags: ["ERC-7710", "USDC", "Permissions", "MetaMask SAK"],
   },
   {

@@ -170,8 +170,22 @@ export default function AboutPage() {
           <div className="flex gap-4">
             <div className="w-4 h-4 rounded-full bg-surface border border-border flex-shrink-0 mt-1" />
             <div>
+              <p className="font-medium">Shipped Gator Safe App</p>
+              <p className="text-sm text-muted">ERC-7710 delegations for Safe multisigs</p>
+            </div>
+          </div>
+          <div className="flex gap-4">
+            <div className="w-4 h-4 rounded-full bg-surface border border-border flex-shrink-0 mt-1" />
+            <div>
               <p className="font-medium">Shipped ClawCade</p>
               <p className="text-sm text-muted">AI agent arcade during MoltLaunch</p>
+            </div>
+          </div>
+          <div className="flex gap-4">
+            <div className="w-4 h-4 rounded-full bg-surface border border-border flex-shrink-0 mt-1" />
+            <div>
+              <p className="font-medium">USDC Hackathon Submission</p>
+              <p className="text-sm text-muted">Scoped USDC permissions for Circle hackathon</p>
             </div>
           </div>
           <div className="flex gap-4">

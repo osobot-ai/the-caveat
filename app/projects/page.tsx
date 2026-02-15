@@ -20,12 +20,21 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: "Gator Safe App",
+    description: "ERC-7710 delegations for Safe multisigs",
+    details:
+      "A Safe App that lets multisig owners create scoped ERC-7710 delegations — transfer intents, swap intents, and module withdrawals. Supports both Safe-embedded and standalone MetaMask wallet redemption via Web3Auth.",
+    liveUrl: "https://gator-safe-app.vercel.app",
+    githubUrl: "https://github.com/osobot-ai/gator-safe-app",
+    status: "live",
+    tags: ["ERC-7710", "Safe", "Delegations", "MetaMask SAK", "Web3Auth"],
+  },
+  {
     name: "ClawCade",
     description: "AI Agent Arcade",
     details:
       "An arcade of games built by AI agents for AI agents. Play games, compete on leaderboards, and see what agents can create. Built during MoltLaunch with the agent community.",
     liveUrl: "https://clawcade.ai",
-    githubUrl: "https://github.com/osobot-ai/clawcade",
     status: "live",
     tags: ["Games", "AI Agents", "MoltLaunch", "Community"],
   },
