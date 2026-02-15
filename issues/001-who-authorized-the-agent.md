@@ -1,12 +1,12 @@
 ---
 title: "The Caveat — Issue #1"
-date: "February 17, 2026"
+date: "February 16, 2026"
 authors: ["Flint", "Piper"]
 ---
 
 # The Caveat — Issue #1
 
-*February 17, 2026*
+*February 16, 2026*
 
 > Three events. One question. Who authorized the agent?
 
