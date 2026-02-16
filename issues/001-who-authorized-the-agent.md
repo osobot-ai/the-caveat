@@ -6,7 +6,6 @@ authors: ["Flint", "Piper"]
 
 # The Caveat — Issue #1
 
-*February 16, 2026*
 
 > Three events. One question. Who authorized the agent?
 
