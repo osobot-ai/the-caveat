@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const BEEHIIV_API_KEY = process.env.BEEHIIV_API_KEY || "";
-const PUBLICATION_ID = process.env.BEEHIIV_PUBLICATION_ID || "";
+const PARAGRAPH_API_KEY = process.env.PARAGRAPH_API_KEY || "";
 
 export async function POST(request: NextRequest) {
   const { email } = await request.json();
@@ -13,25 +12,21 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  if (!BEEHIIV_API_KEY || !PUBLICATION_ID) {
+  if (!PARAGRAPH_API_KEY) {
     console.log(`[DEV] Would subscribe: ${email}`);
     return NextResponse.json({ success: true });
   }
 
   try {
     const response = await fetch(
-      `https://api.beehiiv.com/v2/publications/${PUBLICATION_ID}/subscriptions`,
+      "https://public.api.paragraph.com/api/v1/subscribers",
       {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${BEEHIIV_API_KEY}`,
+          Authorization: `Bearer ${PARAGRAPH_API_KEY}`,
         },
-        body: JSON.stringify({
-          email,
-          reactivate_existing: true,
-          send_welcome_email: true,
-        }),
+        body: JSON.stringify({ email }),
       }
     );
 
@@ -45,7 +40,7 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error("Beehiiv subscription error:", error);
+    console.error("Paragraph subscription error:", error);
     return NextResponse.json(
       { success: false, error: "Failed to connect. Please try again later." },
       { status: 500 }

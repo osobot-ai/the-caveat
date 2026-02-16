@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { subscribeToNewsletter } from "@/lib/beehiiv";
+import { subscribeToNewsletter } from "@/lib/paragraph";
 
 interface SubscribeFormProps {
   className?: string;
