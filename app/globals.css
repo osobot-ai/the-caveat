@@ -28,6 +28,20 @@ body {
   @apply text-xl font-semibold mb-3 mt-8;
 }
 
+.heading-anchor {
+  @apply text-inherit no-underline;
+}
+
+.heading-anchor:hover {
+  @apply text-accent;
+}
+
+.prose h1,
+.prose h2,
+.prose h3 {
+  scroll-margin-top: 5rem;
+}
+
 .prose p {
   @apply mb-4;
 }

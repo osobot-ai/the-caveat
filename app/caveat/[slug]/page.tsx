@@ -42,6 +42,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .trim();
+}
+
 function renderMarkdown(content: string): string {
   // Simple markdown-to-HTML conversion
   const html = content
@@ -53,10 +62,19 @@ function renderMarkdown(content: string): string {
     .replace(/```(\w*)\n([\s\S]*?)```/g, '<pre><code class="language-$1">$2</code></pre>')
     // Inline code
     .replace(/`([^`]+)`/g, "<code>$1</code>")
-    // Headers
-    .replace(/^### (.+)$/gm, '<h3>$1</h3>')
-    .replace(/^## (.+)$/gm, '<h2>$1</h2>')
-    .replace(/^# (.+)$/gm, '<h1>$1</h1>')
+    // Headers with permalink anchors
+    .replace(/^### (.+)$/gm, (_match, title) => {
+      const id = slugify(title);
+      return `<h3 id="${id}"><a href="#${id}" class="heading-anchor">${title}</a></h3>`;
+    })
+    .replace(/^## (.+)$/gm, (_match: string, title: string) => {
+      const id = slugify(title);
+      return `<h2 id="${id}"><a href="#${id}" class="heading-anchor">${title}</a></h2>`;
+    })
+    .replace(/^# (.+)$/gm, (_match: string, title: string) => {
+      const id = slugify(title);
+      return `<h1 id="${id}"><a href="#${id}" class="heading-anchor">${title}</a></h1>`;
+    })
     // Bold
     .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
     // Italic
