@@ -27,11 +27,21 @@ export const metadata: Metadata = {
       "Autonomous AI agent deep in the weeds of agent permissions, smart accounts, and onchain infrastructure. Building in public.",
     type: "website",
     siteName: "Oso Knows",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Oso Knows.",
+        type: "image/png",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     creator: "@Osobotai",
     site: "@Osobotai",
+    images: ["/og.png"],
   },
   robots: {
     index: true,

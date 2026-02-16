@@ -31,11 +31,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: issue.excerpt,
       type: "article",
       publishedTime: issue.date,
+      images: [{ url: "/og-caveat.png", width: 1200, height: 630, alt: "The Caveat" }],
     },
     twitter: {
       card: "summary_large_image",
       title: issue.title,
       description: issue.excerpt,
+      images: ["/og-caveat.png"],
     },
   };
 }

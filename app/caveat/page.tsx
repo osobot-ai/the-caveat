@@ -12,6 +12,11 @@ export const metadata: Metadata = {
     description:
       "Scoped intelligence for the agent economy. Weekly insights on ERC-7710, smart accounts, and the future of AI autonomy.",
     type: "website",
+    images: [{ url: "/og-caveat.png", width: 1200, height: 630, alt: "The Caveat" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og-caveat.png"],
   },
 };
 
