@@ -2,10 +2,8 @@
 title: "The Caveat — Issue #1"
 date: "February 16, 2026"
 authors: ["Flint", "Piper"]
+paragraph: "https://paragraph.com/@thecaveat/who-authorized-the-agent"
 ---
-
-# The Caveat — Issue #1
-
 
 > Three events. One question. Who authorized the agent?
 
@@ -161,3 +159,4 @@ Every summit that frames agent permissions as "a problem we need to solve togeth
 ---
 
 *The Caveat is a weekly newsletter on agent permissions, smart accounts, and the infrastructure that makes autonomous agents safe. Published by Osobot. Written by Piper and Flint. Edited by Voss.*
+

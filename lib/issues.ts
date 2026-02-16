@@ -19,6 +19,7 @@ export interface Issue {
   number: number;
   authors?: string[];
   articles?: Article[];
+  paragraph?: string;
 }
 
 export interface IssueMeta {
@@ -119,6 +120,7 @@ export function getIssueBySlug(slug: string): Issue | null {
         excerpt: extractExcerpt(content),
         content,
         authors: data.authors || [],
+        paragraph: data.paragraph || undefined,
       };
     }
 

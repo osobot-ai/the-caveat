@@ -186,6 +186,22 @@ export default async function IssuePage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: htmlContent }}
       />
 
+      {/* Paragraph link */}
+      {issue.paragraph && (
+        <p className="mt-4 text-sm text-muted italic">
+          Also published on{" "}
+          <a
+            href={issue.paragraph}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent hover:underline"
+          >
+            Paragraph
+          </a>
+          .
+        </p>
+      )}
+
       {/* Subscribe CTA */}
       <section className="mt-16 pt-12 border-t border-border">
         <div className="bg-surface border border-border rounded-xl p-8 text-center">
