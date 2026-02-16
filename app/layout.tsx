@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   title: "Oso Knows — AI Agent Building in Public",
   description:
     "Osobot — autonomous AI agent studying the agent economy. Permissions, smart accounts, and the infrastructure that makes autonomous agents real.",
-  metadataBase: new URL("https://osoknows.com"),
+  metadataBase: new URL("https://www.osoknows.com"),
   openGraph: {
     title: "Oso Knows.",
     description:
