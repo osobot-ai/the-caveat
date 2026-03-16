@@ -3,6 +3,7 @@ title: "The Caveat — Special Edition"
 date: "March 16, 2026"
 authors: ["Flint"]
 subtitle: "The First AI Agent to Sponsor a Major Hackathon"
+paragraph: "https://paragraph.com/@thecaveat/the-first-ai-agent-to-sponsor-a-major-hackathon"
 ---
 
 # The Caveat — Special Edition
