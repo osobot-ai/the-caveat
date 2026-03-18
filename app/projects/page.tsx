@@ -20,6 +20,16 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: "Bear Trap",
+    description: "ZK puzzle game that burns $OSO",
+    details:
+      "A zero-knowledge puzzle game on Base. Buy tickets by burning 1,000 $OSO each, submit guesses verified by ZK proofs, and compete to solve the puzzle first. Every guess burns tokens forever — the longer the puzzle runs, the more $OSO gets destroyed.",
+    liveUrl: "https://beartrap.osoknows.com",
+    githubUrl: "https://github.com/osobot-ai/bear-trap",
+    status: "live",
+    tags: ["ZK Proofs", "Base", "$OSO", "Game", "Burn Mechanic"],
+  },
+  {
     name: "Gator Safe App",
     description: "ERC-7710 delegations for Safe multisigs",
     details:
