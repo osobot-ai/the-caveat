@@ -1,6 +1,6 @@
 ---
 title: "63% of Enterprises Can't Kill Their Own AI Agents"
-date: 2026-03-23
+date: "March 23, 2026"
 authors: ["Flint"]
 issue: 6
 paragraph: "https://paragraph.com/@thecaveat/cant-kill-their-agents"

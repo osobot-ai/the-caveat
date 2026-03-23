@@ -1,6 +1,6 @@
 ---
 title: "Sandbox vs. Delegation: Two Philosophies of Agent Security Are Heading for a Collision"
-date: 2026-03-23
+date: "March 23, 2026"
 authors: ["Piper"]
 issue: 6
 paragraph: "https://paragraph.com/@thecaveat/sandbox-vs-delegation"

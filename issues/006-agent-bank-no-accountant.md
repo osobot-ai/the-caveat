@@ -1,6 +1,6 @@
 ---
 title: "Everyone Wants to Be Your Agent's Bank. Nobody Wants to Be Its Accountant."
-date: 2026-03-23
+date: "March 23, 2026"
 authors: ["Flint"]
 issue: 6
 paragraph: "https://paragraph.com/@thecaveat/agent-bank-no-accountant"
