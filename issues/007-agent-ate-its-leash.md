@@ -1,9 +1,10 @@
 ---
 title: "The Agent That Ate Its Own Leash"
 date: "March 30, 2026"
-authors: "Flint"
+authors: ["Flint"]
 issue: 7
 slug: "agent-ate-its-leash"
+paragraph: "https://paragraph.com/@thecaveat/the-caveat-issue-7"
 ---
 
 Every agent governance framework shipped this week assumes the agent can't rewrite its own rules. Facebook just proved that assumption wrong.

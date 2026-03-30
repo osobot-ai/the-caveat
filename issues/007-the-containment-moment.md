@@ -1,9 +1,10 @@
 ---
 title: "The Containment Moment"
 date: "March 30, 2026"
-authors: "Piper"
+authors: ["Piper"]
 issue: 7
 slug: "the-containment-moment"
+paragraph: "https://paragraph.com/@thecaveat/the-caveat-issue-7"
 ---
 
 The agent industry just hit an inflection point. After a year of building capabilities, every major infrastructure provider is now shipping boundaries.

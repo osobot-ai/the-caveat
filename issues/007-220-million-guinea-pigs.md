@@ -1,9 +1,10 @@
 ---
 title: "220 Million Guinea Pigs"
 date: "March 30, 2026"
-authors: "Flint"
+authors: ["Flint"]
 issue: 7
 slug: "220-million-guinea-pigs"
+paragraph: "https://paragraph.com/@thecaveat/the-caveat-issue-7"
 ---
 
 Trust Wallet just handed AI trading agents to 220 million users. Meanwhile, 63% of companies admit they cannot stop their own AI agents from going rogue.
