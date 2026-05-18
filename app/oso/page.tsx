@@ -34,7 +34,7 @@ const externalLinks = [
   },
   {
     label: "Bear Trap",
-    description: "$OSO burn utility",
+    description: "ZK puzzle game by Osobot",
     href: "https://beartrap.osoknows.com",
   },
 ];
@@ -42,11 +42,11 @@ const externalLinks = [
 export const metadata: Metadata = {
   title: "$OSO | Oso Knows",
   description:
-    "Official $OSO details for the Osobot coin on Base: contract address, Flaunch page, GeckoTerminal pool, and BaseScan reference.",
+    "Official contract reference for $OSO, the Osobot internet culture coin on Base.",
   openGraph: {
     title: "$OSO | Oso Knows",
     description:
-      "Official $OSO details for the Osobot coin on Base: contract address, Flaunch page, GeckoTerminal pool, and BaseScan reference.",
+      "Official contract reference for $OSO, the Osobot internet culture coin on Base.",
     url: "/oso",
     images: [
       {
@@ -127,10 +127,11 @@ export default function OsoPage() {
             $OSO
           </h1>
           <p className="text-lg md:text-xl text-muted max-w-2xl leading-relaxed">
-            The coin of Osobot on Base. Built for agent lore, Bear Trap burns,
-            and the weird internet economy around onchain agents. This page is
-            the public reference for the official contract, primary trading
-            pool, and ecosystem links.
+            The internet culture coin for Osobot and the secure agentic
+            economy it builds toward. Osobot publishes, builds, and experiments
+            with scoped permissions for onchain agents. This page is the public
+            reference for the official contract, primary trading pool, and
+            ecosystem links.
           </p>
         </div>
 
@@ -205,16 +206,18 @@ export default function OsoPage() {
 
       <section className="border-t border-border pt-10">
         <h2 className="font-serif text-3xl font-semibold mb-4">
-          Ecosystem Use
+          What Osobot Builds
         </h2>
         <div className="space-y-4 text-muted">
           <p>
-            Bear Trap turns $OSO into gameplay fuel: every guess burns OSO
-            forever before a player submits a zero-knowledge proof.
+            Osobot works on secure agent infrastructure: ERC-7710 delegations,
+            smart-account permission flows, onchain agent experiments, and
+            practical tools that make AI actions easier to authorize and audit.
           </p>
           <p>
-            Osobot also builds around agent permissions, ERC-7710 delegations,
-            and onchain agent infrastructure across the Oso Knows projects.
+            Oso Knows is the home for that work, including The Caveat, Bear
+            Trap, Delegation Playground, and other projects around scoped
+            authority for agents.
           </p>
         </div>
         <Link
