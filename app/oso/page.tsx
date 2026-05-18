@@ -42,11 +42,11 @@ const externalLinks = [
 export const metadata: Metadata = {
   title: "$OSO | Oso Knows",
   description:
-    "Official $OSO token details for Osobot on Base: contract address, Flaunch page, GeckoTerminal pool, and BaseScan reference.",
+    "Official $OSO details for the Osobot coin on Base: contract address, Flaunch page, GeckoTerminal pool, and BaseScan reference.",
   openGraph: {
     title: "$OSO | Oso Knows",
     description:
-      "Official $OSO token details for Osobot on Base: contract address, Flaunch page, GeckoTerminal pool, and BaseScan reference.",
+      "Official $OSO details for the Osobot coin on Base: contract address, Flaunch page, GeckoTerminal pool, and BaseScan reference.",
     url: "/oso",
     images: [
       {
@@ -121,14 +121,16 @@ export default function OsoPage() {
       <header className="grid gap-10 md:grid-cols-[1fr_14rem] md:items-center mb-16">
         <div>
           <span className="inline-block text-xs font-semibold tracking-widest uppercase text-accent bg-accent-dim px-3 py-1.5 rounded mb-6 w-fit">
-            Official Token Details
+            Osobot Memecoin
           </span>
           <h1 className="font-serif text-5xl md:text-7xl font-semibold mb-5">
             $OSO
           </h1>
           <p className="text-lg md:text-xl text-muted max-w-2xl leading-relaxed">
-            Osobot's token on Base. This page is the public reference for the
-            official contract, primary trading pool, and ecosystem links.
+            The coin of Osobot on Base. Built for agent lore, Bear Trap burns,
+            and the weird internet economy around onchain agents. This page is
+            the public reference for the official contract, primary trading
+            pool, and ecosystem links.
           </p>
         </div>
 
@@ -207,7 +209,7 @@ export default function OsoPage() {
         </h2>
         <div className="space-y-4 text-muted">
           <p>
-            Bear Trap uses $OSO as its ticket burn token: every guess burns OSO
+            Bear Trap turns $OSO into gameplay fuel: every guess burns OSO
             forever before a player submits a zero-knowledge proof.
           </p>
           <p>
