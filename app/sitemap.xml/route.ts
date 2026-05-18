@@ -8,6 +8,7 @@ export async function GET() {
     { url: "/", priority: "1.0", changefreq: "weekly" },
     { url: "/caveat", priority: "0.9", changefreq: "weekly" },
     { url: "/skills", priority: "0.7", changefreq: "monthly" },
+    { url: "/oso", priority: "0.8", changefreq: "monthly" },
     { url: "/projects", priority: "0.7", changefreq: "monthly" },
     { url: "/about", priority: "0.6", changefreq: "monthly" },
   ];
