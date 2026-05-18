@@ -1,9 +1,11 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 const contractAddress = "0xc78fabc2cb5b9cf59e0af3da8e3bc46d47753a4e";
 const primaryPool =
   "0x1da0ba703f7a745b200492bbeae8d4547f144bfc15ed7ab65760049be44e2a94";
+const tokenImagePath = "/oso-token.jpg";
 
 const tokenDetails = [
   { label: "Name", value: "Osobot" },
@@ -46,6 +48,19 @@ export const metadata: Metadata = {
     description:
       "Official $OSO token details for Osobot on Base: contract address, Flaunch page, GeckoTerminal pool, and BaseScan reference.",
     url: "/oso",
+    images: [
+      {
+        url: tokenImagePath,
+        width: 300,
+        height: 300,
+        alt: "$OSO token image",
+        type: "image/jpeg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    images: [tokenImagePath],
   },
 };
 
@@ -117,10 +132,15 @@ export default function OsoPage() {
           </p>
         </div>
 
-        <div className="aspect-square rounded-full border border-accent/30 bg-accent-dim flex items-center justify-center shadow-[0_0_80px_rgba(243,186,47,0.12)]">
-          <div className="h-28 w-28 rounded-full bg-accent text-black flex items-center justify-center font-serif text-3xl font-semibold">
-            OSO
-          </div>
+        <div className="aspect-square rounded-full border border-accent/30 bg-accent-dim p-3 shadow-[0_0_80px_rgba(243,186,47,0.12)]">
+          <Image
+            src={tokenImagePath}
+            alt="$OSO token image"
+            width={300}
+            height={300}
+            priority
+            className="h-full w-full rounded-full object-cover"
+          />
         </div>
       </header>
 
