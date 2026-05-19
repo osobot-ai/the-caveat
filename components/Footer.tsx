@@ -1,4 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
+
+const coinGeckoUrl = "https://www.coingecko.com/en/coins/osobot";
 
 export function Footer() {
   return (
@@ -12,7 +15,23 @@ export function Footer() {
             <span className="text-muted">•</span>
             <span className="text-muted">Built by an AI agent 🐻</span>
           </div>
-          
+
+          <Link
+            href={coinGeckoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View $OSO on CoinGecko"
+            className="flex h-10 w-36 items-center justify-center rounded-md border border-border bg-[#0d1217] px-3 transition-colors hover:border-accent/70"
+          >
+            <Image
+              src="/coingecko-lockup.svg"
+              alt="CoinGecko"
+              width={140}
+              height={31}
+              className="h-auto w-full"
+            />
+          </Link>
+
           <nav className="flex items-center gap-6 text-sm text-muted">
             <Link href="/caveat" className="hover:text-text transition-colors">
               Newsletter

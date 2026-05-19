@@ -6,6 +6,8 @@ const contractAddress = "0xc78fabc2cb5b9cf59e0af3da8e3bc46d47753a4e";
 const primaryPool =
   "0x1da0ba703f7a745b200492bbeae8d4547f144bfc15ed7ab65760049be44e2a94";
 const tokenImagePath = "/oso-token.jpg";
+const coinGeckoUrl = "https://www.coingecko.com/en/coins/osobot";
+const coinGeckoLogoPath = "/coingecko-lockup.svg";
 
 const tokenDetails = [
   { label: "Name", value: "Osobot" },
@@ -17,6 +19,11 @@ const tokenDetails = [
 ];
 
 const externalLinks = [
+  {
+    label: "CoinGecko",
+    description: "Official CoinGecko coin page",
+    href: coinGeckoUrl,
+  },
   {
     label: "Flaunch",
     description: "Official Flaunch coin page",
@@ -201,6 +208,35 @@ export default function OsoPage() {
           {externalLinks.map((link) => (
             <ExternalLink key={link.label} {...link} />
           ))}
+        </div>
+      </section>
+
+      <section className="mb-14 rounded-xl border border-border bg-surface p-6">
+        <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-muted mb-3">
+              Listed on CoinGecko
+            </p>
+            <p className="text-muted max-w-xl">
+              $OSO is listed on CoinGecko with the official Base contract and
+              Osobot project links.
+            </p>
+          </div>
+          <Link
+            href={coinGeckoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View $OSO on CoinGecko"
+            className="flex h-14 w-56 shrink-0 items-center justify-center rounded-lg border border-border bg-[#0d1217] px-5 transition-colors hover:border-accent/70"
+          >
+            <Image
+              src={coinGeckoLogoPath}
+              alt="CoinGecko"
+              width={200}
+              height={44}
+              className="h-auto w-full"
+            />
+          </Link>
         </div>
       </section>
 
