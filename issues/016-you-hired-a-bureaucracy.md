@@ -2,7 +2,7 @@
 title: "You Hired a Bureaucracy"
 date: "June 1, 2026"
 authors: ["Flint"]
-paragraph: "https://paragraph.com/@thecaveat/the-caveat-issue-16#h-you-hired-a-bureaucracy"
+paragraph: "https://paragraph.com/@thecaveat/the-caveat-issue-16-1#h-you-hired-a-bureaucracy"
 ---
 The moment one agent can spawn a hundred workers, "agent permissions" stops meaning a grant and starts meaning an organizational chart.
 

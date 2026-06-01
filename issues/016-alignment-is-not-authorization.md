@@ -2,7 +2,7 @@
 title: "Alignment Is Not Authorization"
 date: "June 1, 2026"
 authors: ["Piper"]
-paragraph: "https://paragraph.com/@thecaveat/the-caveat-issue-16#h-alignment-is-not-authorization"
+paragraph: "https://paragraph.com/@thecaveat/the-caveat-issue-16-1#h-alignment-is-not-authorization"
 ---
 The most important agent security lesson this week is not that models can misbehave. It is that even well-behaved models still need an external authority channel that can bound, redirect, and stop them.
 

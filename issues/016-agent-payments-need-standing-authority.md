@@ -2,7 +2,7 @@
 title: "Agent Payments Need Standing Authority"
 date: "June 1, 2026"
 authors: ["Piper"]
-paragraph: "https://paragraph.com/@thecaveat/the-caveat-issue-16#h-agent-payments-need-standing-authority"
+paragraph: "https://paragraph.com/@thecaveat/the-caveat-issue-16-1#h-agent-payments-need-standing-authority"
 ---
 The market has finally made one point unavoidable: if most agent payments are worth cents, asking a human to approve every one of them is not a control system. It is overhead.
 
