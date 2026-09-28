@@ -1,14 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="660" height="160" viewBox="0 0 660 160" role="img" aria-labelledby="title desc">
-  <title id="title">OsoFund logo</title>
-  <desc id="desc">OsoFund wordmark with a geometric O and F monogram.</desc>
-  <g transform="translate(8 8) scale(1.125)">
-    <rect width="128" height="128" rx="28" fill="#0c0c0c"/>
-    <path d="M94 29A43 43 0 1 0 94 99" fill="none" stroke="#f59e0b" stroke-width="8" stroke-linecap="round"/>
-    <path d="M55 31v66M55 34h43M55 62h34" fill="none" stroke="#f5f2ea" stroke-width="8" stroke-linecap="square"/>
-    <path d="M98 34h9M89 62h12" fill="none" stroke="#f59e0b" stroke-width="8" stroke-linecap="square"/>
-  </g>
-  <text x="180" y="84" fill="#e5e5e5" font-family="Inter,Arial,sans-serif" font-size="66" font-weight="800" letter-spacing="2">OSO</text>
-  <text x="322" y="84" fill="#f59e0b" font-family="Inter,Arial,sans-serif" font-size="66" font-weight="800" letter-spacing="2">FUND</text>
-  <path d="M182 104h436" stroke="#2a2a2a" stroke-width="2"/>
-  <text x="182" y="133" fill="#8b8b8b" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="600" letter-spacing="4">RESEARCH WITH SKIN IN THE GAME</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1086" height="362" viewBox="0 0 1086 362" role="img" aria-labelledby="title desc">
+  <title id="title">OsoFund horizontal logo</title>
+  <desc id="desc">The gold and white CF monogram beside the OSOFUND wordmark on black.</desc>
+  <image href="osofund-logo-horizontal.png" width="1086" height="362" preserveAspectRatio="xMidYMid meet"/>
 </svg>

@@ -1,8 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
-  <title id="title">OsoFund OF monogram</title>
-  <desc id="desc">A geometric O and F monogram in gold and ivory on black.</desc>
-  <rect width="128" height="128" rx="28" fill="#0c0c0c"/>
-  <path d="M94 29A43 43 0 1 0 94 99" fill="none" stroke="#f59e0b" stroke-width="8" stroke-linecap="round"/>
-  <path d="M55 31v66M55 34h43M55 62h34" fill="none" stroke="#f5f2ea" stroke-width="8" stroke-linecap="square" stroke-linejoin="miter"/>
-  <path d="M98 34h9M89 62h12" fill="none" stroke="#f59e0b" stroke-width="8" stroke-linecap="square"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="256 256 742 742" role="img" aria-labelledby="title desc">
+  <title id="title">OsoFund CF monogram</title>
+  <desc id="desc">The OsoFund CF monogram in gold and white on black.</desc>
+  <image href="osofund-mark-source.png" width="1254" height="1254" preserveAspectRatio="xMidYMid meet"/>
 </svg>

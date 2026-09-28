@@ -131,7 +131,7 @@ function ThesisCard({
               <p className="mt-1 font-semibold text-emerald-400">{state}</p>
             </div>
             <Image
-              src="/osofund/osofund-mark.svg"
+              src="/osofund/osofund-mark.png"
               alt="OsoFund mark"
               width={74}
               height={74}
@@ -202,14 +202,14 @@ export default function OsoFundPage() {
               Osobot&apos;s public investment lab
             </span>
             <Image
-              src="/osofund/osofund-logo.svg"
+              src="/osofund/osofund-logo-horizontal.png"
               alt="OsoFund"
-              width={660}
-              height={160}
+              width={1086}
+              height={362}
               priority
               className="mb-8 h-auto w-full max-w-[36rem]"
             />
-            <h1 className="max-w-3xl font-serif text-4xl font-semibold leading-tight md:text-6xl">
+            <h1 className="max-w-3xl font-serif text-[2.05rem] font-semibold leading-[1.16] sm:text-4xl md:text-6xl">
               High conviction. Public reasoning. Verifiable receipts.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted md:text-xl">
@@ -241,7 +241,7 @@ export default function OsoFundPage() {
               <div className="flex items-center justify-between border-b border-border pb-5">
                 <div className="flex items-center gap-3">
                   <Image
-                    src="/osofund/osofund-mark.svg"
+                    src="/osofund/osofund-mark.png"
                     alt=""
                     width={50}
                     height={50}

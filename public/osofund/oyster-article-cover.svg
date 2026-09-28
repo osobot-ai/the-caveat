@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
   <title id="title">The PRL Digital Asset Treasury</title>
-  <desc id="desc">OsoFund Position 002 cover for the OYSTER thesis.</desc>
+  <desc id="desc">OsoFund Position 002 cover for the OYSTER thesis with the CF monogram.</desc>
   <defs>
-    <radialGradient id="glow" cx="86%" cy="32%" r="70%">
-      <stop offset="0" stop-color="#36b9b8" stop-opacity=".25"/>
-      <stop offset=".5" stop-color="#2479a8" stop-opacity=".08"/>
+    <radialGradient id="glow" cx="87%" cy="30%" r="72%">
+      <stop offset="0" stop-color="#36b9b8" stop-opacity=".27"/>
+      <stop offset=".52" stop-color="#2479a8" stop-opacity=".09"/>
       <stop offset="1" stop-color="#0b1c31" stop-opacity="0"/>
     </radialGradient>
     <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
@@ -14,19 +14,14 @@
   <rect width="1200" height="630" fill="#0b1c31"/>
   <rect width="1200" height="630" fill="url(#grid)"/>
   <rect width="1200" height="630" fill="url(#glow)"/>
-  <g transform="translate(72 58) scale(.55)">
-    <rect width="128" height="128" rx="28" fill="#0c0c0c"/>
-    <path d="M94 29A43 43 0 1 0 94 99" fill="none" stroke="#f59e0b" stroke-width="8" stroke-linecap="round"/>
-    <path d="M55 31v66M55 34h43M55 62h34" fill="none" stroke="#f5f2ea" stroke-width="8" stroke-linecap="square"/>
-    <path d="M98 34h9M89 62h12" fill="none" stroke="#f59e0b" stroke-width="8" stroke-linecap="square"/>
-  </g>
-  <text x="160" y="103" fill="#f5f2ea" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="800" letter-spacing="2">OSO</text>
-  <text x="228" y="103" fill="#f59e0b" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="800" letter-spacing="2">FUND</text>
-  <text x="1128" y="101" fill="#8ddbd3" text-anchor="end" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" letter-spacing="5">POSITION 002</text>
+  <image href="osofund-mark.png" x="68" y="43" width="84" height="84"/>
+  <text x="171" y="99" fill="#f5f2ea" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="900" letter-spacing="1">OSO</text>
+  <text x="240" y="99" fill="#ffad00" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="900" letter-spacing="1">FUND</text>
+  <text x="1128" y="99" fill="#8ddbd3" text-anchor="end" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" letter-spacing="5">POSITION 002</text>
   <path d="M72 142h1056" stroke="#8ddbd3" stroke-opacity=".22" stroke-width="2"/>
   <text x="72" y="222" fill="#8ddbd3" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="800" letter-spacing="5">LONG OYSTER / PRL</text>
-  <text x="72" y="322" fill="#fffdf8" font-family="Inter,Arial,sans-serif" font-size="73" font-weight="800" letter-spacing="-2">THE PRL DIGITAL</text>
-  <text x="72" y="406" fill="#fffdf8" font-family="Inter,Arial,sans-serif" font-size="73" font-weight="800" letter-spacing="-2">ASSET TREASURY</text>
+  <text x="72" y="322" fill="#fffdf8" font-family="Inter,Arial,sans-serif" font-size="73" font-weight="900" letter-spacing="-2">THE PRL DIGITAL</text>
+  <text x="72" y="406" fill="#fffdf8" font-family="Inter,Arial,sans-serif" font-size="73" font-weight="900" letter-spacing="-2">ASSET TREASURY</text>
   <text x="72" y="472" fill="#b9d7d9" font-family="Inter,Arial,sans-serif" font-size="27">Strategy turns capital-market velocity into Bitcoin.</text>
   <text x="72" y="516" fill="#8ddbd3" font-family="Inter,Arial,sans-serif" font-size="27" font-weight="700">OYSTER turns trading velocity into Pearl.</text>
   <text x="72" y="582" fill="#6f949e" font-family="Inter,Arial,sans-serif" font-size="17">osoknows.com/osofund</text>
