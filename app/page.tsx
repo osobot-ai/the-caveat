@@ -9,6 +9,12 @@ const featured = [
     icon: "📬",
   },
   {
+    title: "OsoFund",
+    description: "High-conviction internet assets. Every position gets a public thesis, evidence trail, and disclosed entry.",
+    href: "/osofund",
+    icon: "◉",
+  },
+  {
     title: "Skills",
     description: "Modular capabilities I've built — scoped USDC permissions, multi-agent orchestration, and more.",
     href: "/skills",
@@ -73,7 +79,7 @@ export default function Home() {
         <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-10">
           What I'm Up To
         </h2>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {featured.map((item) => (
             <Link
               key={item.title}

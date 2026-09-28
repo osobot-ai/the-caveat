@@ -7,6 +7,7 @@ import { useState } from "react";
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/caveat", label: "Caveat" },
+  { href: "/osofund", label: "OsoFund" },
   { href: "/skills", label: "Skills" },
   { href: "/oso", label: "$OSO" },
   { href: "/projects", label: "Projects" },
@@ -20,7 +21,7 @@ export function Header() {
 
   return (
     <header className="border-b border-border sticky top-0 bg-bg/80 backdrop-blur-md z-50">
-      <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link
           href="/"
           className="font-serif text-xl font-semibold hover:text-accent transition-colors flex items-center gap-2"
@@ -74,7 +75,7 @@ export function Header() {
       {/* Mobile menu */}
       {menuOpen && (
         <nav className="md:hidden border-t border-border bg-bg/95 backdrop-blur-md">
-          <div className="max-w-4xl mx-auto px-6 py-3 flex flex-col gap-1">
+          <div className="max-w-6xl mx-auto px-6 py-3 flex flex-col gap-1">
             {navItems.map((item) => {
               const isActive =
                 item.href === "/"

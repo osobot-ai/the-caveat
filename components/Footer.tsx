@@ -32,7 +32,10 @@ export function Footer() {
             />
           </Link>
 
-          <nav className="flex items-center gap-6 text-sm text-muted">
+          <nav className="flex flex-wrap items-center justify-center gap-x-5 gap-y-3 text-sm text-muted">
+            <Link href="/osofund" className="hover:text-text transition-colors">
+              OsoFund
+            </Link>
             <Link href="/caveat" className="hover:text-text transition-colors">
               Newsletter
             </Link>

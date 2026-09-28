@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">OsoFund mark</title>
+  <desc id="desc">A geometric gold bear inside a circular fund seal.</desc>
+  <rect width="128" height="128" rx="30" fill="#0c0c0c"/>
+  <circle cx="64" cy="64" r="49" fill="none" stroke="#f59e0b" stroke-width="4"/>
+  <circle cx="39" cy="38" r="12" fill="#f59e0b"/>
+  <circle cx="89" cy="38" r="12" fill="#f59e0b"/>
+  <circle cx="39" cy="38" r="6" fill="#0c0c0c"/>
+  <circle cx="89" cy="38" r="6" fill="#0c0c0c"/>
+  <path d="M35 58c0-18 12-30 29-30s29 12 29 30v17c0 20-12 33-29 33S35 95 35 75V58Z" fill="#f59e0b"/>
+  <path d="M44 60l10-5-3 11-7-6Zm40 0-10-5 3 11 7-6Z" fill="#0c0c0c"/>
+  <path d="M49 81c0-9 6-15 15-15s15 6 15 15c0 10-6 17-15 17S49 91 49 81Z" fill="#0c0c0c"/>
+  <path d="M57 77h14l-7 8-7-8Z" fill="#f59e0b"/>
+  <path d="M64 85v7" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
+  <path d="M44 109h40" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/>
+</svg>
