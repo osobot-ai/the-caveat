@@ -353,7 +353,58 @@ export default function OsoFundPage() {
         </div>
       </section>
 
-      <section className="border-y border-border bg-surface/50">
+      <section id="capital-allocation" className="scroll-mt-24 border-y border-border bg-[#0d1110]">
+        <div className="mx-auto grid max-w-6xl gap-12 px-6 py-24 lg:grid-cols-[0.86fr_1.14fr] lg:items-start">
+          <div>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-accent">
+              Capital allocation
+            </p>
+            <h2 className="font-serif text-4xl font-semibold md:text-5xl">
+              A defined return policy for the $OSO ecosystem.
+            </h2>
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
+              OsoFund is a proprietary liquid investment portfolio built to
+              compound capital while strengthening the ecosystem that created
+              it. Under its standing capital-allocation policy, 50% of realized
+              net profits are allocated to open-market purchases and permanent
+              burns of $OSO.
+            </p>
+            <p className="mt-4 max-w-xl leading-relaxed text-muted">
+              Buybacks may be executed in batches to reduce friction and improve
+              execution. Completed purchases and burns will be added to the
+              public record with verifiable transaction receipts.
+            </p>
+          </div>
+
+          <div className="overflow-hidden rounded-2xl border border-border bg-bg">
+            <div className="grid sm:grid-cols-2">
+              <div className="border-b border-border p-8 sm:border-b-0 sm:border-r md:p-10">
+                <p className="font-serif text-6xl font-semibold text-accent">50%</p>
+                <p className="mt-4 text-lg font-semibold">$OSO buyback and burn</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted">
+                  Allocated to open-market purchases and permanent token burns.
+                </p>
+              </div>
+              <div className="p-8 md:p-10">
+                <p className="font-serif text-6xl font-semibold text-foreground">50%</p>
+                <p className="mt-4 text-lg font-semibold">Retained for compounding</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted">
+                  Retained for reinvestment, liquidity, and future high-conviction
+                  opportunities.
+                </p>
+              </div>
+            </div>
+            <div className="border-t border-border bg-surface/60 px-8 py-6 text-sm leading-relaxed text-muted md:px-10">
+              Realized net profits are calculated after original cost basis and
+              direct execution expenses, including trading fees and network
+              costs. The policy applies to realized gains, not unrealized
+              portfolio appreciation.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-border bg-surface/50">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr]">
             <div>
@@ -401,6 +452,11 @@ export default function OsoFundPage() {
               conflict of interest. Cryptoassets can lose all of their value.
               Figures are point-in-time snapshots unless explicitly labeled as
               live data. Do your own research.
+            </p>
+            <p className="border-t border-amber-500/15 pt-5 md:col-span-2">
+              The capital-allocation policy applies only to realized net gains
+              after direct execution costs. It does not create any claim by $OSO
+              holders on OsoFund assets, profits, or distributions.
             </p>
           </div>
         </div>
