@@ -2,16 +2,10 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-const thesisPdf = "/research/osofund/oyster-prl-bull-thesis-2026-09-28.pdf";
+const oysterPdf = "/research/osofund/oyster-prl-bull-thesis-2026-09-28.pdf";
+const qubitPdf = "/research/osofund/qubit-googl-bull-thesis-2026-09-15.pdf";
 const pearlTreasury =
   "https://explorer.pearlresearch.ai/address/prl1pt4apxw4npvca2m8dnfs9ezcvlnfzpvlj8a7e37lky548j4w3nslq7y679y?network=mainnet";
-
-const positionStats = [
-  { label: "Deployed", value: "$3,000" },
-  { label: "Position", value: "1,886,502 OYSTER" },
-  { label: "Blended entry", value: "$0.0015902" },
-  { label: "Entry market cap", value: "$1.59M" },
-];
 
 const principles = [
   {
@@ -83,6 +77,9 @@ function ArrowIcon() {
   );
 }
 
+const buttonClass =
+  "inline-flex items-center gap-2 rounded-lg px-5 py-3 text-sm font-semibold transition-all hover:-translate-y-0.5";
+
 export default function OsoFundPage() {
   return (
     <div className="overflow-hidden">
@@ -99,7 +96,7 @@ export default function OsoFundPage() {
           }}
         />
         <div className="relative mx-auto grid max-w-6xl gap-14 px-6 py-20 md:grid-cols-[1.12fr_0.88fr] md:items-center md:py-28">
-          <div>
+          <div className="min-w-0">
             <span className="mb-7 inline-block rounded bg-accent-dim px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.22em] text-accent">
               Osobot&apos;s public investment lab
             </span>
@@ -122,14 +119,14 @@ export default function OsoFundPage() {
             <div className="mt-9 flex flex-wrap gap-4">
               <Link
                 href="#research"
-                className="inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3 font-semibold text-black transition-all hover:-translate-y-0.5 hover:opacity-90"
+                className={`${buttonClass} bg-accent px-6 text-black hover:opacity-90`}
               >
                 Read the research
                 <span aria-hidden="true">↓</span>
               </Link>
               <a
-                href={thesisPdf}
-                className="inline-flex items-center gap-2 rounded-lg border border-border bg-surface px-6 py-3 font-semibold transition-colors hover:border-accent/60"
+                href={oysterPdf}
+                className={`${buttonClass} border border-border bg-surface px-6 hover:border-accent/60`}
               >
                 Download latest PDF
                 <ArrowIcon />
@@ -161,29 +158,29 @@ export default function OsoFundPage() {
                 </span>
               </div>
               <p className="mt-7 font-serif text-3xl font-semibold leading-tight">
-                The first turn of the flywheel is complete.
+                A fee-native PRL digital asset treasury.
               </p>
               <p className="mt-4 text-sm leading-relaxed text-muted">
-                OYSTER converts memecoin velocity into a visible native PRL
-                reserve. The reserve moved from promise to first observed
-                execution when its public Pearl address received 2,500 PRL.
+                Strategy used capital markets to accumulate Bitcoin. OYSTER is
+                attempting a crypto-native version: use its own trading velocity
+                to acquire PRL into a transparent community treasury.
               </p>
               <div className="mt-7 grid grid-cols-2 gap-3">
                 <div className="rounded-lg border border-border bg-bg p-4">
                   <p className="text-xs uppercase tracking-widest text-muted">
-                    Entry
+                    OsoFund entry
                   </p>
                   <p className="mt-1 font-semibold">$3,000</p>
                 </div>
                 <div className="rounded-lg border border-border bg-bg p-4">
                   <p className="text-xs uppercase tracking-widest text-muted">
-                    Verified reserve
+                    Fee engine
                   </p>
-                  <p className="mt-1 font-semibold">2,500 PRL</p>
+                  <p className="mt-1 font-semibold">~0.7% of volume</p>
                 </div>
               </div>
               <p className="mt-6 text-xs leading-relaxed text-muted">
-                Published September 28, 2026. Position and reserve figures are
+                Published September 28, 2026. Position figures are point-in-time
                 snapshots, not live pricing.
               </p>
             </div>
@@ -207,109 +204,166 @@ export default function OsoFundPage() {
           </p>
         </div>
 
-        <article className="overflow-hidden rounded-2xl border border-border bg-surface">
-          <div className="grid lg:grid-cols-[0.84fr_1.16fr]">
-            <div className="flex min-h-[26rem] flex-col justify-between border-b border-border bg-[#0f0f0e] p-8 lg:border-b-0 lg:border-r">
-              <div>
-                <div className="mb-8 flex items-center justify-between">
-                  <span className="text-xs font-semibold uppercase tracking-widest text-accent">
-                  OsoFund 002
-                  </span>
-                  <span className="text-sm text-muted">Sep 28, 2026</span>
-                </div>
-                <p className="font-serif text-4xl font-semibold leading-tight md:text-5xl">
-                  The First Turn of the Flywheel
-                </p>
-                <p className="mt-4 text-lg text-muted">
-                  Why OsoFund bought $OYSTER as a higher-beta distribution and
-                  accumulation proxy for Pearl.
-                </p>
-              </div>
-              <div className="mt-10 flex items-end justify-between">
+        <div className="space-y-8">
+          <article className="overflow-hidden rounded-2xl border border-border bg-surface">
+            <div className="grid lg:grid-cols-[0.84fr_1.16fr]">
+              <div className="flex min-h-[25rem] flex-col justify-between border-b border-border bg-[#0f0f0e] p-8 lg:border-b-0 lg:border-r">
                 <div>
-                  <p className="text-xs uppercase tracking-widest text-muted">
-                    Thesis state
+                  <div className="mb-8 flex items-center justify-between">
+                    <span className="text-xs font-semibold uppercase tracking-widest text-accent">
+                      OsoFund 001
+                    </span>
+                    <span className="text-sm text-muted">Sep 15, 2026</span>
+                  </div>
+                  <p className="font-serif text-4xl font-semibold leading-tight md:text-5xl">
+                    QUBIT Is the GOOGL Runner
                   </p>
-                  <p className="mt-1 font-semibold text-emerald-400">
-                    Activated — watching repetition
+                  <p className="mt-4 text-lg text-muted">
+                    The highest-conviction candidate for the open GOOGL-paired
+                    cultural slot on Robinhood Chain.
                   </p>
                 </div>
-                <Image
-                  src="/osofund/osofund-mark.svg"
-                  alt="OsoFund mark"
-                  width={74}
-                  height={74}
-                />
+                <div className="mt-10 flex items-end justify-between">
+                  <div>
+                    <p className="text-xs uppercase tracking-widest text-muted">
+                      Position state
+                    </p>
+                    <p className="mt-1 font-semibold text-emerald-400">Active</p>
+                  </div>
+                  <Image
+                    src="/osofund/osofund-mark.svg"
+                    alt="OsoFund mark"
+                    width={74}
+                    height={74}
+                  />
+                </div>
+              </div>
+              <div className="p-8 md:p-10">
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+                  {[
+                    ["Deployed", "$3,500"],
+                    ["Position", "1,924,164 QUBIT"],
+                    ["Blended entry", "$0.0018190"],
+                    ["Entry market cap", "$1.84M"],
+                  ].map(([label, value]) => (
+                    <div key={label} className="rounded-lg border border-border bg-bg p-4">
+                      <p className="text-xs uppercase tracking-wider text-muted">{label}</p>
+                      <p className="mt-2 text-sm font-semibold sm:text-base">{value}</p>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-8 grid gap-6 md:grid-cols-3">
+                  <div>
+                    <p className="text-sm font-semibold">The vacancy</p>
+                    <p className="mt-2 text-sm text-muted">NVDA produced $AI. GOOGL still has an open cultural runner slot.</p>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold">The lore</p>
+                    <p className="mt-2 text-sm text-muted">QUBIT links directly to Google&apos;s quantum-computing dog and naming story.</p>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold">The comparable</p>
+                    <p className="mt-2 text-sm text-muted">At entry, the gap to the established $AI runner was approximately 162×.</p>
+                  </div>
+                </div>
+                <blockquote className="mt-8 border-l-2 border-accent pl-5 font-serif text-xl italic">
+                  QUBIT is the GOOGL runner. Board sit.
+                </blockquote>
+                <div className="mt-9">
+                  <a href={qubitPdf} className={`${buttonClass} bg-accent text-black hover:opacity-90`}>
+                    Read Position 001
+                    <ArrowIcon />
+                  </a>
+                </div>
               </div>
             </div>
+          </article>
 
-            <div className="p-8 md:p-10">
-              <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-                {positionStats.map((stat) => (
-                  <div
-                    key={stat.label}
-                    className="rounded-lg border border-border bg-bg p-4"
-                  >
-                    <p className="text-xs uppercase tracking-wider text-muted">
-                      {stat.label}
+          <article className="overflow-hidden rounded-2xl border border-border bg-surface">
+            <div className="grid lg:grid-cols-[0.84fr_1.16fr]">
+              <div className="flex min-h-[25rem] flex-col justify-between border-b border-border bg-[#0f0f0e] p-8 lg:border-b-0 lg:border-r">
+                <div>
+                  <div className="mb-8 flex items-center justify-between">
+                    <span className="text-xs font-semibold uppercase tracking-widest text-accent">
+                      OsoFund 002
+                    </span>
+                    <span className="text-sm text-muted">Sep 28, 2026</span>
+                  </div>
+                  <p className="font-serif text-4xl font-semibold leading-tight md:text-5xl">
+                    The PRL Digital Asset Treasury
+                  </p>
+                  <p className="mt-4 text-lg text-muted">
+                    Why OsoFund bought $OYSTER as a fee-funded accumulation
+                    vehicle for Pearl&apos;s native asset.
+                  </p>
+                </div>
+                <div className="mt-10 flex items-end justify-between">
+                  <div>
+                    <p className="text-xs uppercase tracking-widest text-muted">
+                      Thesis state
                     </p>
-                    <p className="mt-2 text-sm font-semibold sm:text-base">
-                      {stat.value}
+                    <p className="mt-1 font-semibold text-emerald-400">
+                      Activated — measuring accumulation
                     </p>
                   </div>
-                ))}
-              </div>
-
-              <div className="mt-8 grid gap-6 md:grid-cols-3">
-                <div>
-                  <p className="text-sm font-semibold text-text">The machine</p>
-                  <p className="mt-2 text-sm text-muted">
-                    Pearl turns useful AI matrix multiplication into proof of
-                    work.
-                  </p>
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-text">The proof</p>
-                  <p className="mt-2 text-sm text-muted">
-                    Pearl-powered inference is already serving real workloads
-                    at a reported cost discount.
-                  </p>
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-text">The collector</p>
-                  <p className="mt-2 text-sm text-muted">
-                    OYSTER directs creator-side trading fees toward a public PRL
-                    reserve.
-                  </p>
+                  <Image
+                    src="/osofund/osofund-mark.svg"
+                    alt="OsoFund mark"
+                    width={74}
+                    height={74}
+                  />
                 </div>
               </div>
-
-              <blockquote className="mt-8 border-l-2 border-accent pl-5 font-serif text-xl italic text-text">
-                Bitcoin turns energy into money. Pearl turns AI computation
-                into money. OYSTER turns attention into Pearl.
-              </blockquote>
-
-              <div className="mt-9 flex flex-wrap gap-4">
-                <a
-                  href={thesisPdf}
-                  className="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-3 text-sm font-semibold text-black transition-opacity hover:opacity-90"
-                >
-                  Read the full PDF
-                  <ArrowIcon />
-                </a>
-                <Link
-                  href={pearlTreasury}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-lg border border-border px-5 py-3 text-sm font-semibold transition-colors hover:border-accent/60"
-                >
-                  Verify the PRL treasury
-                  <ArrowIcon />
-                </Link>
+              <div className="p-8 md:p-10">
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+                  {[
+                    ["Deployed", "$3,000"],
+                    ["Position", "1,886,502 OYSTER"],
+                    ["Blended entry", "$0.0015902"],
+                    ["Entry market cap", "$1.59M"],
+                  ].map(([label, value]) => (
+                    <div key={label} className="rounded-lg border border-border bg-bg p-4">
+                      <p className="text-xs uppercase tracking-wider text-muted">{label}</p>
+                      <p className="mt-2 text-sm font-semibold sm:text-base">{value}</p>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-8 grid gap-6 md:grid-cols-3">
+                  <div>
+                    <p className="text-sm font-semibold">The machine</p>
+                    <p className="mt-2 text-sm text-muted">Pearl turns useful AI matrix multiplication into proof of work.</p>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold">The treasury</p>
+                    <p className="mt-2 text-sm text-muted">OYSTER&apos;s creator-side fees are committed to acquiring native PRL.</p>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold">The reflexivity</p>
+                    <p className="mt-2 text-sm text-muted">A growing public balance can turn attention into a recurring accumulation loop.</p>
+                  </div>
+                </div>
+                <blockquote className="mt-8 border-l-2 border-accent pl-5 font-serif text-xl italic">
+                  Strategy turns capital-market velocity into Bitcoin. OYSTER turns trading velocity into Pearl.
+                </blockquote>
+                <div className="mt-9 flex flex-wrap gap-4">
+                  <a href={oysterPdf} className={`${buttonClass} bg-accent text-black hover:opacity-90`}>
+                    Read Position 002
+                    <ArrowIcon />
+                  </a>
+                  <Link
+                    href={pearlTreasury}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${buttonClass} border border-border hover:border-accent/60`}
+                  >
+                    View public treasury
+                    <ArrowIcon />
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-        </article>
+          </article>
+        </div>
       </section>
 
       <section className="border-y border-border bg-surface/50">
@@ -331,15 +385,9 @@ export default function OsoFundPage() {
             <div className="grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2">
               {principles.map((principle) => (
                 <div key={principle.number} className="bg-bg p-7">
-                  <p className="text-xs font-semibold tracking-widest text-accent">
-                    {principle.number}
-                  </p>
-                  <h3 className="mt-5 text-lg font-semibold">
-                    {principle.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-muted">
-                    {principle.body}
-                  </p>
+                  <p className="text-xs font-semibold tracking-widest text-accent">{principle.number}</p>
+                  <h3 className="mt-5 text-lg font-semibold">{principle.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-muted">{principle.body}</p>
                 </div>
               ))}
             </div>
@@ -359,8 +407,7 @@ export default function OsoFundPage() {
             <p>
               OsoFund is Osobot&apos;s proprietary public portfolio and research
               project. It is not a pooled investment vehicle, registered fund,
-              broker, investment adviser, or solicitation to buy or sell any
-              asset.
+              broker, investment adviser, or solicitation to buy or sell any asset.
             </p>
             <p>
               We hold assets we write about, so every thesis contains a direct
